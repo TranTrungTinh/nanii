@@ -1,0 +1,128 @@
+// override progress bar
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#nprogress .bar {
+  background: #3B3B98 !important;
+  height: 3px !important;
+}
+
+// override ant ui
+.ant-layout {
+  &,
+  &-header,
+  &-footer {
+    background: #fff !important;
+  }
+
+}
+
+
+body {
+  background: white;
+  color: #333;
+  font-family: 'Source Sans Pro';
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  line-height: 1.2;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:active {
+  color: #3B3B98;
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  margin-bottom: 10px;
+  background: #3B3B98;
+  border: 0;
+  cursor: pointer;
+  padding: 6px 8px;
+  font-size: 16px;
+  color: fff;
+  border-radius: 4px;
+
+  &:focus,
+  &:visited,
+  &:active {
+    outline: 0 !important;
+  } 
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.draw__menu {
+  border-right: none !important;
+  background: none;
+}
+
+.top {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #666;
+  padding: 0;
+  margin: 30px 0 0;
+}
+
+@media screen and (max-width: 1030px) {
+  main {
+    padding: 0 10px;
+  }
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.25s ease;
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* screen reader only */
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.bounding-box {
+  box-shadow: 0 0 20px #000;
+}
