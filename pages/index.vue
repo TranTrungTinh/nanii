@@ -5,7 +5,7 @@
         <div class="places">
           <div v-for="(place, i) in places" class="location" :key="i">
             <a-card hoverable>
-              <img v-lazy="place.img" :alt="place.name" />
+              <img v-lazy="place.img[0]" :alt="place.name" />
               <h2>{{ place.name }}</h2>
               <a-rate :defaultValue="place.stars" allowHalf disabled />
               <p style="text-align: justify">{{ place.description }}</p>

@@ -12,19 +12,19 @@
     <a-divider orientation="left">13/08/2018</a-divider>
     <sixth-gallery :galleries="fourth" />
 
-    <a-divider orientation="left">14/08/2018</a-divider>
-    <fourth-gallery :galleries="fiveth" />
+    <!-- <a-divider orientation="left">14/08/2018</a-divider>
+    <fourth-gallery :galleries="fiveth" /> -->
   </div>
 </template>
 <script>
 import { prepare } from '@/utils/prepareData.js'
-const galleries = prepare('galleries/nhatrang', 40)
+const galleries = prepare('trip/nhatrang', 32)
 
 export default {
   components: {
     SecondGallery: () => import('~/components/gallery/second-gallery.vue'),
     ThirdGallery: () => import('~/components/gallery/third-gallery.vue'),
-    FourthGallery: () => import('~/components/gallery/fourth-gallery.vue'),
+    // FourthGallery: () => import('~/components/gallery/fourth-gallery.vue'),
     FivethGallery: () => import('~/components/gallery/fiveth-gallery.vue'),
     SixthGallery: () => import('~/components/gallery/sixth-gallery.vue')
   },
@@ -41,9 +41,9 @@ export default {
     fourth() {
       return galleries.slice(24, 32)
     },
-    fiveth() {
-      return galleries.slice(32, 40)
-    }
+    // fiveth() {
+    //   return galleries.slice(32, 40)
+    // }
   }
 }
 </script>

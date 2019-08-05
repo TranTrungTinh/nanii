@@ -52,7 +52,7 @@ export default {
 
   .item {
     &1 {
-      height: 290px;
+      height: 590px;
     }
     &2 {
       height: 346px;

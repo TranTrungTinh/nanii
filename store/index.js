@@ -5,7 +5,7 @@ const initialState = () => ({
     {
       id: "iudjkheuy_odiausiouyuh",
       name: 'Ngọc Anh', //'♥ ngọͥcaͣnͫh ♥',
-      img: '/profile/profile1.jpg',
+      img: '/profile/1.jpg',
       bio: 'Everything is possible, as long as you believe in it.',
       following: 273,
       followers: 573,
@@ -16,7 +16,7 @@ const initialState = () => ({
     {
       id: "jhfjbngjsaywquitr_ieyurgdaf",
       name: 'Ngọc Anh',
-      img: '/profile/profile2.jpg',
+      img: '/profile/2.jpg',
       bio: 'Thanh xuân là những chuyến đi.',      
       following: 542,
       followers: 5643,
@@ -27,7 +27,7 @@ const initialState = () => ({
     {
       id: "mkfjsahbrwtqeuwqy231_84732hjhtad",
       name: 'Ngọc Anh',
-      img: '/profile/profile3.jpg',
+      img: '/profile/3.jpg',
       bio: 'Thanh xuân là những chuyến đi.',      
       following: 347,
       followers: 3476,
@@ -38,7 +38,7 @@ const initialState = () => ({
     {
       id: "brfsadaewqqeuwqy231_84732hjhtad",
       name: 'Ngọc Anh',
-      img: '/profile/profile4.jpg',
+      img: '/profile/4.jpg',
       bio: 'Thanh xuân là những chuyến đi.',     
       following: 654,
       followers: 8755,
@@ -52,7 +52,7 @@ const initialState = () => ({
       name: 'Đà Lạt',
       stars: 5,
       tags: ['dalat', 'cool', 'fresh'],
-      img: '/stories/dalat.jpg',
+      img: ['/home/2.jpg', '/place/1.jpg'],
       description:
         'Nơi yên bình, nơi cất giữ những yêu thương không đâu khác chính là Nơi Đây. Tôi yêu cái lạnh buốt da, yêu sự tĩnh lặng khi về thăm Đà Lạt vào những ngày thứ trong tuần. Nó nhẹ nhàng không ồn ào không chút vội vã. Yêu những cung đường lúc thì ngoằn nghoèo khi thì thẳng tấp không cần đưa tôi đến nơi đâu cả. Cơn mưa rào bất chợt chỉ lướt qua rồi đi mất cũng làm tôi yêu nơi này hơn. Những buổi sáng quấn mình trong chăn ấm áp, những buổi chiều lang thang một mình ngắm nhìn mọi thứ...bình yên đến lạ thường! Yêu luôn cả con người, những đôi mắt long lanh làn da rám nắng của đám trẻ con người bản địa. Tôi yêu nơi này!'
     },
@@ -60,7 +60,7 @@ const initialState = () => ({
       name: 'Nha Trang',
       stars: 4.5,
       tags: ['nhatrang', 'beach', 'great'],
-      img: '/stories/nhatrang.jpg',
+      img: ['/home/1.jpg', '/place/3.jpg'],
       description:
         'Nơi đầy nắng và gió, Nha Trang một bãi biển xinh đẹp. Núi cao, mây trôi sóng biển dạt dào mang chút ồn ào nhưng không hề vội vã. Dòng người đông đúc qua qua lại lại nói cười trên bãi biển mới đó đâu đã thưa thớt dần đó chính là chiều tà, lúc ánh sáng mặt trời không còn chói chang cũng là lúc những ánh đèn ven biển lần lượt bật lên. Đêm muộn thêm bao nhiêu thì tiếng nói cũng thưa thớt đi bấy nhiêu chỉ còn lại một vài người trong lòng có chút tâm sự một mình trãi lòng với biển đêm. Biển đẹp nhất là khi nó chỉ một mình!'
     },
@@ -68,7 +68,7 @@ const initialState = () => ({
       name: 'Coco Beach',
       stars: 4,
       tags: ['coco', 'beach', 'hot'],
-      img: '/stories/coco.jpg',
+      img: ['/home/3.jpg', '/place/2.jpg'],
       description:
         'Nơi có một vùng biển yên bình - Coco Beach. Không quá rực rỡ cũng không một chút ồn ào, ngày tôi đặt chân đến đây chắc có lẽ là lúc mọi thứ đã trở về đơn giản nhất. Không gian tĩnh lặng chỉ có sóng là vẫn vỗ ồ ạt gió vẫn thổi rào rào và thế là tôi đã có một kỳ nghỉ vội vàng thật sự tuyệt vời!'
     }
@@ -76,97 +76,97 @@ const initialState = () => ({
   galleries: [
     {
       "title": "Na 1",
-      "name": "/galleries/dalat/3.jpg",
+      "name": "/gallery/1.jpg",
       "description": "da lat 1"
     },
     {
       "title": "Na 2",
-      "name": "/galleries/dalat/12.jpg",
+      "name": "/gallery/2.jpg",
       "description": "da lat 2"
     },
     {
       "title": "Na 3",
-      "name": "/galleries/dalat/19.jpg",
+      "name": "/gallery/3.jpg",
       "description": "da lat 3"
     },
     {
       "title": "Na 4",
-      "name": "/galleries/dalat/20.jpg",
+      "name": "/gallery/4.jpg",
       "description": "da lat 4"
     },
     {
       "title": "Na 5",
-      "name": "/galleries/dalat/23.jpg",
+      "name": "/gallery/5.jpg",
       "description": "da lat 5"
     },
     {
       "title": "Na 6",
-      "name": "/galleries/dalat/32.jpg",
+      "name": "/gallery/6.jpg",
       "description": "da lat 6"
     },
     {
       "title": "Na 7",
-      "name": "/galleries/dalat/33.jpg",
+      "name": "/gallery/7.jpg",
       "description": "da lat 7"
     },
     {
       "title": "Na 8",
-      "name": "/galleries/dalat/36.jpg",
+      "name": "/gallery/8.jpg",
       "description": "da lat 8"
     },
     {
       "title": "Na 9",
-      "name": "/galleries/dalat/39.jpg",
+      "name": "/gallery/9.jpg",
       "description": "da lat 9"
     },
     {
       "title": "Na 10",
-      "name": "/galleries/dalat/52.jpg",
+      "name": "/gallery/10.jpg",
       "description": "da lat 10"
     },
     {
       "title": "Na 11",
-      "name": "/galleries/dalat/55.jpg",
+      "name": "/gallery/11.jpg",
       "description": "da lat 11"
     },
     {
       "title": "Na 12",
-      "name": "/galleries/dalat/4.jpg",
+      "name": "/gallery/12.jpg",
       "description": "da lat 12"
     },
     {
       "title": "Na 13",
-      "name": "/galleries/dalat/18.jpg",
+      "name": "/gallery/13.jpg",
       "description": "da lat 13"
     },
     {
       "title": "Na 14",
-      "name": "/galleries/dalat/25.jpg",
+      "name": "/gallery/14.jpg",
       "description": "da lat 14"
     },
     {
       "title": "Na 15",
-      "name": "/galleries/dalat/31.jpg",
+      "name": "/gallery/15.jpg",
       "description": "da lat 15"
     },
     {
       "title": "Na 16",
-      "name": "/galleries/dalat/35.jpg",
+      "name": "/gallery/16.jpg",
       "description": "da lat 16"
     },
     {
       "title": "Na 17",
-      "name": "/galleries/dalat/41.jpg",
+      "name": "/gallery/17.jpg",
       "description": "da lat 17"
     },
     {
       "title": "Na 18",
-      "name": "/galleries/dalat/44.jpg",
+      "name": "/gallery/18.jpg",
       "description": "da lat 18"
     },
     {
       "title": "Na 19",
-      "name": "/galleries/dalat/49.jpg",
+      "name": "/gallery/19.jpg",
       "description": "da lat 19"
     }
   ]

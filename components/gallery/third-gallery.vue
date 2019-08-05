@@ -58,16 +58,16 @@ export default {
 
   .item {
     &1 {
-      height: 380px;
+      height: 480px;
     }
     &2 {
       height: 316px;
     }
     &3 {
-      height: 580px;
+      height: 720px;
     }
     &4 {
-      height: 415px;
+      height: 515px;
     }
     &5 {
       height: 280px;

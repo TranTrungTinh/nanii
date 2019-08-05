@@ -4,7 +4,7 @@ export default {
     middleware: 'pages'
   },
   server: {
-    port: 4000, // default: 3000
+    port: 4001, // default: 3000
     host: 'localhost' // default: localhost,
   },
   render: {

@@ -20,10 +20,10 @@
     <a-col :xs="10">
       <div class="gallery__item item3" v-lazy:background-image="galleries[5]"></div>
     </a-col>
-    <a-col :xs="12">
+    <a-col :xs="9">
       <div class="gallery__item item4" v-lazy:background-image="galleries[6]"></div>
     </a-col>
-    <a-col :xs="12">
+    <a-col :xs="15">
       <div class="gallery__item item4" v-lazy:background-image="galleries[7]"></div>
     </a-col>
   </a-row>

@@ -10,7 +10,7 @@
             <a-rate :defaultValue="place.stars" allowHalf disabled />
             <span class="ant-rate-text">{{place.stars}} stars</span>
           </div>
-          <div class="main-img" v-lazy:background-image="place.img"></div>
+          <div class="main-img" v-lazy:background-image="place.img[1]"></div>
           <p class="description">{{ place.description }}</p>
           <a-tag 
             v-for="tag in place.tags"
@@ -22,9 +22,9 @@
       <a-col :xl="8">
         <div class="others">
           <h2>Other Trips</h2>
-          <div v-for="place in places" class="location" :key="place.name">
+          <div v-for="place in reversePlaces" class="location" :key="place.name">
             <a-card hoverable>
-              <img v-lazy="place.img" :alt="place.name" />
+              <img v-lazy="place.img[0]" :alt="place.name" />
               <h3><strong>{{ place.name }}</strong></h3>
               <p style="text-align: justify">{{ place.description }}</p>
             </a-card>
@@ -46,7 +46,10 @@ export default {
     IconMapPin
   },
   computed: {
-    ...mapGetters(['page', 'users', 'places'])
+    ...mapGetters(['page', 'users', 'places']),
+    reversePlaces() {
+      return this.places.map(item => item).reverse()
+    }
   }
 }
 </script>

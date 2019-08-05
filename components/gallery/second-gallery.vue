@@ -57,16 +57,16 @@ export default {
 
   .item {
     &1 {
-      height: 320px;
+      height: 410px;
     }
     &2 {
-      height: 550px;
+      height: 650px;
     }
     &3 {
       height: 620px;
     }
     &4 {
-      height: 236px;
+      height: 336px;
     }
   }
 }
