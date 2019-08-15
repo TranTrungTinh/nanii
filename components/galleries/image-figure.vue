@@ -5,7 +5,7 @@
 			{{imageData.title}}
 		</figcaption>
 		<div class="image-description">
-			{{imageData.description}}
+			<i>{{imageData.description}}</i>
 		</div>
 	</figure>
 </template>
@@ -100,6 +100,12 @@ export default {
 			width: 100%;
 			height: 100%;
 			padding: 40px;
+
+			font-size: 18px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #333;
 			box-sizing: border-box;
 			background-color: #FFFFFF;
 			-webkit-transform: rotateY(180deg) translateZ(1px);

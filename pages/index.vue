@@ -8,7 +8,7 @@
               <img v-lazy="place.img[0]" :alt="place.name" />
               <h2>{{ place.name }}</h2>
               <a-rate :defaultValue="place.stars" allowHalf disabled />
-              <p style="text-align: justify">{{ place.description }}</p>
+              <p style="text-align: justify">{{ place.status }}</p>
             </a-card>
           </div>
         </div>

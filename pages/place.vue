@@ -11,7 +11,7 @@
             <span class="ant-rate-text">{{place.stars}} stars</span>
           </div>
           <div class="main-img" v-lazy:background-image="place.img[1]"></div>
-          <p class="description">{{ place.description }}</p>
+          <p class="description" v-html="place.description"></p>
           <a-tag 
             v-for="tag in place.tags"
             :key="tag"
@@ -26,7 +26,7 @@
             <a-card hoverable>
               <img v-lazy="place.img[0]" :alt="place.name" />
               <h3><strong>{{ place.name }}</strong></h3>
-              <p style="text-align: justify">{{ place.description }}</p>
+              <p style="text-align: justify">{{ place.status }}</p>
             </a-card>
           </div>
         </div>

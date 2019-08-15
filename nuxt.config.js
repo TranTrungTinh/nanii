@@ -8,9 +8,9 @@ export default {
     host: 'localhost' // default: localhost,
   },
   render: {
-    // cache image 7 days
+    // cache image 365 days
     static: {
-      maxAge: 1000 * 60 * 60 * 24 * 7 
+      maxAge: 1000 * 60 * 60 * 24 * 365 
     }
   },
 
@@ -19,6 +19,7 @@ export default {
     title: 'Nanii',
     meta: [
       { charset: 'utf-8' },
+      { lang: 'en' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Blog Travelling For Na' }
     ],
