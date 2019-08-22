@@ -1,7 +1,7 @@
 <template>
 <section class="gallery">
   <a-row :gutter="8">
-    <a-col :xs="16">
+    <a-col :xs="24" :sm="16">
       <a-row :gutter="8">
         <a-col :xs="24">
           <div class="gallery__item item1" v-lazy:background-image="galleries[0]"></div>
@@ -11,15 +11,15 @@
         </a-col>
       </a-row>
     </a-col>
-    <a-col :xs="8">
+    <a-col :xs="12" :sm="8">
       <div class="gallery__item item3" v-lazy:background-image="galleries[1]"></div>
     </a-col>
-    <a-col :xs="8">
+    <a-col :xs="12" :sm="8">
       <div class="gallery__item item4" v-lazy:background-image="galleries[7]"></div>
     </a-col>
   </a-row>
   <a-row :gutter="8">
-    <a-col :xs="8">
+    <a-col :xs="24" :sm="8">
       <a-row :gutter="8">
         <a-col :xs="24">
           <div class="gallery__item item3" v-lazy:background-image="galleries[6]"></div>
@@ -29,7 +29,7 @@
         </a-col>
       </a-row>
     </a-col>
-    <a-col :xs="16">
+    <a-col :xs="24" :sm="16">
       <a-row :gutter="8">
         <a-col :xs="24">
           <div class="gallery__item item2" v-lazy:background-image="galleries[4]"></div>
@@ -50,6 +50,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import "@/assets/scss/mixins/index.scss";
 .gallery {
   &__item {
     background-position: bottom;
@@ -72,6 +73,12 @@ export default {
     }
     &4 {
       height: 630px;
+      @include respond(xs) {
+        height: 410px;
+      }
+      @include respond(sm) {
+        height: 410px;
+      }
     }
   }
 }

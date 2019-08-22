@@ -15,19 +15,6 @@
     <a-divider orientation="left">14/05/2019</a-divider>
 
     <fourth-gallery :galleries="fourth" />
-<!-- 
-
-    <a-divider orientation="left">15/05/2019</a-divider>
-
-    <fiveth-gallery :galleries="fiveth" />
-
-    <a-divider orientation="left">27/07/2019</a-divider>
-
-    <sixth-gallery :galleries="sixth" />
-
-    <a-divider orientation="left">28/07/2019</a-divider>
-
-    <third-gallery :galleries="seventh" /> -->
   </div>
 </template>
 <script>
@@ -55,16 +42,7 @@ export default {
     },
     fourth() {
       return galleries.slice(24, 32)
-    },
-    // fiveth() {
-    //   return galleries.slice(32, 40)
-    // },
-    // sixth() {
-    //   return galleries.slice(40, 48)
-    // },
-    // seventh() {
-    //   return galleries.slice(48, 56)
-    // }
+    }
   }
 }
 </script>

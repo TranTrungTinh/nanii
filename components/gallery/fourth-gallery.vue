@@ -1,7 +1,7 @@
 <template>
 <section class="gallery">
   <a-row :gutter="8">
-    <a-col :xs="16">
+    <a-col :xs="24" :lg="16">
       <a-row :gutter="8">
         <a-col :xs="12">
           <div class="gallery__item item2" v-lazy:background-image="galleries[0]"></div>
@@ -14,19 +14,19 @@
         </a-col>
       </a-row>
     </a-col>
-    <a-col :xs="8">
+    <a-col :xs="24" :lg="8">
       <div class="gallery__item item4" v-lazy:background-image="galleries[2]"></div>
     </a-col>
-    <a-col :xs="9">
+    <a-col :xs="24" :lg="9">
       <div class="gallery__item item1" v-lazy:background-image="galleries[6]"></div>
     </a-col>
-    <a-col :xs="15">
+    <a-col :xs="24" :lg="15">
       <div class="gallery__item item1" v-lazy:background-image="galleries[7]"></div>
     </a-col>
-    <a-col :xs="12">
+    <a-col :xs="24">
       <div class="gallery__item item3" v-lazy:background-image="galleries[4]"></div>
     </a-col>
-    <a-col :xs="12">
+    <a-col :xs="24">
       <div class="gallery__item item3" v-lazy:background-image="galleries[5]"></div>
     </a-col>
   </a-row>

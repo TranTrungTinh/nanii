@@ -307,7 +307,7 @@ aside p {
 .follow {
   color: #fff !important;
   font-weight: bold;
-  width: 150px;
+  width: 130px;
   transition: 1s all ease;
   @include group(320px, 220px);
   &:focus {

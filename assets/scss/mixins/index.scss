@@ -1,0 +1,20 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == xs  {
+      @media only screen and (max-width: 375px) { @content };    //iphone 6,7,8,X,Xs
+  }
+  @if $breakpoint == sm {
+      @media only screen and (max-width: 414px) { @content };     //iphone 6,7,8 plus, Xs max
+  }
+  @if $breakpoint == md {
+      @media only screen and (max-width: 768px) { @content };    //ipad port
+  }
+  @if $breakpoint == lg {
+      @media only screen and (max-width: 1024px) { @content };    //ipad land
+  }
+  @if $breakpoint == xl {
+      @media only screen and (max-width: 1200px) { @content };    //desktop
+  }
+  @if $breakpoint == xxl {
+      @media only screen and (max-width: 1440px) { @content };    //big desktop
+  }
+}

@@ -11,9 +11,6 @@
 
     <a-divider orientation="left">13/08/2018</a-divider>
     <sixth-gallery :galleries="fourth" />
-
-    <!-- <a-divider orientation="left">14/08/2018</a-divider>
-    <fourth-gallery :galleries="fiveth" /> -->
   </div>
 </template>
 <script>
