@@ -17,11 +17,15 @@ export default {
   /* Headers of the page */
   head: {
     title: 'Nanii',
+    htmlAttrs: {
+      lang: 'en',
+    },
     meta: [
+      { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
       { charset: 'utf-8' },
-      { lang: 'en' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Blog Travelling For Na' }
+      { hid: 'keyword', name: 'keyword', content: 'nanii,fleurna_nii_,blog,traveling' },
+      { hid: 'description', name: 'description', content: 'Nanii blog traveling' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -46,7 +50,10 @@ export default {
   ],
 
   /* Nuxt.js modules */
-  modules: [],
+  modules: [
+    '@nuxtjs/vendor'
+  ],
+  vendor: ['ant-design-vue'],
 
   /* Build configuration */
   build: {

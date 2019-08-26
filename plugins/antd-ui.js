@@ -10,7 +10,7 @@ import {
   Rate,
   Row,
   Tag
-} from 'ant-design-vue'
+} from 'static/vendor/ant-design-vue'
 
 // css manual import
 [
@@ -24,7 +24,7 @@ import {
   'rate',
   'row',
   'tag'
-].forEach(libName => import(`ant-design-vue/lib/${libName}/style/css`))
+].forEach(libName => import(`static/vendor/ant-design-vue/lib/${libName}/style/css`))
 
 export default () => {
   Vue.use(BackTop)

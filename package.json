@@ -9,9 +9,11 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "pwa": "nuxt build && nuxt start"
+    "pwa": "nuxt build && nuxt start",
+    "host": "nuxt generate && nuxt start"
   },
   "dependencies": {
+    "@nuxtjs/vendor": "^1.1.6",
     "ant-design-vue": "^1.3.13",
     "cross-env": "^5.2.0",
     "flipbook-vue": "^0.6.2",
