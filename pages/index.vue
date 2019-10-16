@@ -4,7 +4,7 @@
       <a-col :xl="18">
         <div class="places">
           <div v-for="(place, i) in places" class="location" :key="i">
-            <a-card hoverable>
+            <a-card hoverable @click="handleClick">
               <img v-lazy="place.img[0]" :alt="place.name" />
               <h2>{{ place.name }}</h2>
               <a-rate :defaultValue="place.stars" allowHalf disabled />
@@ -35,6 +35,11 @@ export default {
   },
   computed: {
     ...mapGetters(['page', 'users', 'places'])
+  },
+  methods: {
+    handleClick() {
+      this.$router.push('/place')
+    }
   }
 }
 </script>

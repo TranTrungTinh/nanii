@@ -4,10 +4,10 @@
     <a-col :xs="24">
       <a-row :gutter="8">
         <a-col :xs="12">
-          <div class="gallery__item item1" v-lazy:background-image="galleries[1]"></div>
+          <galary-item classes="item1" :img="galleries[1]" />
         </a-col>
         <a-col :xs="12">
-          <div class="gallery__item item1" v-lazy:background-image="galleries[2]"></div>
+          <galary-item classes="item2" :img="galleries[2]" />
         </a-col>
       </a-row>
     </a-col>
@@ -16,30 +16,34 @@
     <a-col :lg="8">
       <a-row :gutter="8">
         <a-col :xs="24">
-          <div class="gallery__item item2" v-lazy:background-image="galleries[0]"></div>
+          <galary-item classes="item2" :img="galleries[0]" />
         </a-col>
         <a-col :xs="24">
-          <div class="gallery__item item2" v-lazy:background-image="galleries[7]"></div>
+          <galary-item classes="item2" :img="galleries[7]" />
         </a-col>
       </a-row>
     </a-col>
     <a-col :lg="8">
-      <div class="gallery__item item5" v-lazy:background-image="galleries[4]"></div>
+      <galary-item classes="item5" :img="galleries[4]" />
     </a-col>
     <a-col :lg="8">
-      <div class="gallery__item item5" v-lazy:background-image="galleries[5]"></div>
+      <galary-item classes="item5" :img="galleries[5]" />
     </a-col>
     <a-col :lg="16">
-      <div class="gallery__item item4" v-lazy:background-image="galleries[3]"></div>
+      <galary-item classes="item4" :img="galleries[3]" />
     </a-col>
     <a-col :lg="16">
-      <div class="gallery__item item4" v-lazy:background-image="galleries[6]"></div>
+      <galary-item classes="item4" :img="galleries[6]" />
     </a-col>
   </a-row>
 </section>
 </template>
 <script>
+
 export default {
+  components: {
+    GalaryItem: () => import('./item')
+  },
   props: {
     galleries: { type: Array, required: true, default: () => [] }
   }
@@ -47,15 +51,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .gallery {
-  &__item {
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 4px 0;
-    width: 100%;
-    border-radius: 4px;
-  }
-
   .item {
     &1 {
       height: 260px;

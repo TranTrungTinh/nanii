@@ -35,31 +35,31 @@
             <a-menu class="draw__menu" @click="handleMenuClick">
               <a-menu-item key="1">
                 <nuxt-link exact to="/" class="draw__menu--nav">
-                  <img src="@/assets/icons/home.svg" alt="icon" class="draw__menu--icon" />
+                  <img src="icons/home.svg" alt="icon" class="draw__menu--icon" />
                   <span>Home</span>
                 </nuxt-link>
               </a-menu-item>
               <a-menu-item key="2">
                 <nuxt-link to="/place" class="draw__menu--nav">
-                  <img src="@/assets/icons/star.svg" alt="icon" class="draw__menu--icon" />
+                  <img src="icons/star.svg" alt="icon" class="draw__menu--icon" />
                   <span>Places</span>
                 </nuxt-link>
               </a-menu-item>
               <a-menu-item key="3">
                 <nuxt-link to="/trips" class="draw__menu--nav">
-                  <img src="@/assets/icons/trip.svg" alt="icon" class="draw__menu--icon" />
+                  <img src="icons/trip.svg" alt="icon" class="draw__menu--icon" />
                   <span>Trips</span>
                 </nuxt-link>
               </a-menu-item>
               <a-menu-item key="4" class="draw__menu--nav">
                 <nuxt-link to="/galleries">
-                  <img src="@/assets/icons/gallery.svg" alt="icon" class="draw__menu--icon" />
+                  <img src="icons/gallery.svg" alt="icon" class="draw__menu--icon" />
                   <span>Gallery</span>
                 </nuxt-link>
               </a-menu-item>
               <a-menu-item key="5" class="draw__menu--nav">
                 <nuxt-link to="/album">
-                  <img src="@/assets/icons/album.svg" alt="icon" class="draw__menu--icon" />
+                  <img src="icons/album.svg" alt="icon" class="draw__menu--icon" />
                   <span>Album</span>
                 </nuxt-link>
               </a-menu-item>
