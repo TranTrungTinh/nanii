@@ -35,10 +35,13 @@ export default {
 
   /* Customize the progress-bar color */
   loading: '@/components/tools/the-progress.vue',
-
+  loadingIndicator: {
+    name: 'cube-grid',
+    color: '#3B3B98',
+    background: '#fff'
+  },
   /* Global CSS */
   css: [
-    // { src: 'ant-design-vue/dist/antd.min.css' },
     { src: 'nprogress/nprogress.css' },
     { src: '@/assets/scss/main.scss', lang: 'scss' }
   ],

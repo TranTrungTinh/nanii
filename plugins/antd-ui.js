@@ -3,6 +3,7 @@ import {
   BackTop,
   Card,
   Col,
+  Icon,
   Drawer,
   Divider,
   Layout,
@@ -17,6 +18,7 @@ import {
   'back-top',
   'card',
   'col',
+  'icon',
   'drawer',
   'divider',
   'layout',
@@ -30,6 +32,7 @@ export default () => {
   Vue.use(BackTop)
   Vue.use(Card)
   Vue.use(Col)
+  Vue.use(Icon)
   Vue.use(Drawer)
   Vue.use(Divider)
   Vue.use(Layout)

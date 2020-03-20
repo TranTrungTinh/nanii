@@ -20,7 +20,7 @@
       <span v-else>{{ selectedUser.name }}</span>
     </h2>
 
-    <div @click="addPlace" class="side-icon" key="sideicon">
+    <!-- <div @click="addPlace" class="side-icon" key="sideicon">
       <icon-base v-if="page === 'index'" icon-name="mail" icon-color="white" width="22" height="22">
         <icon-mail />
       </icon-base>
@@ -30,7 +30,7 @@
       </icon-base>
     </div>
 
-    <div key="saveinfo" class="saveinfo">Saved!</div>
+    <div key="saveinfo" class="saveinfo">Saved!</div> -->
 
     <aside key="aside">
       <p class="map-pin">
