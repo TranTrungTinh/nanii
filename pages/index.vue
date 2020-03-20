@@ -1,24 +1,19 @@
 <template>
   <main>
-    <a-row :gutter="8">
-      <a-col :xl="18">
-        <div class="places">
-          <div v-for="(place, i) in places" class="location" :key="i">
-            <a-card hoverable @click="handleClick">
-              <img v-lazy="place.img[0]" :alt="place.name" />
-              <h2>{{ place.name }}</h2>
-              <a-rate :defaultValue="place.stars" allowHalf disabled />
-              <p style="text-align: justify">{{ place.status }}</p>
-            </a-card>
-          </div>
-        </div>
-      </a-col>
-      <a-col :xl="6">
-        <div class="mapcontain">
-          <p>
-            <icon-base icon-name="mappin"><icon-map-pin /></icon-base>
-            Checked in at Da Lat city
-          </p>
+    <a-row :gutter="16">
+      <a-col :xs="24" v-for="(place, i) in places" :key="i">
+        <div class="card-link">
+          <article class="blog-card">
+            <img class="post-image" v-lazy="place.img[0]" @click="handleClick"/>
+            <div class="article-details">
+              <nuxt-link to="/place">
+                <h4 class="post-category">TRAVEL</h4>
+                <h3 class="post-title">{{ place.name }}</h3>
+                <p class="post-description">{{ place.status }}</p>
+              </nuxt-link>
+              <p class="post-author">By Nanii</p>
+            </div>
+          </article>
         </div>
       </a-col>
     </a-row>

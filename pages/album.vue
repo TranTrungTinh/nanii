@@ -3,14 +3,14 @@
     <flipbook class="flipbook" :pages="pages"  v-slot="flipbook">
       <div class="action-bar">
         <img 
-          src="@/assets/icons/left.svg" 
+          src="icons/left.svg" 
           alt="icon"
           class="btn left" 
           :class="{ disabled: !flipbook.canFlipLeft }" 
           @click="flipbook.flipLeft"
         />
         <img
-          src="@/assets/icons/zoom-in.svg"  
+          src="icons/zoom-in.svg"  
           alt="icon"
           class="btn plus"
           :class="{ disabled: !flipbook.canZoomIn }"
@@ -20,14 +20,14 @@
           Page {{ flipbook.page }} of {{ flipbook.numPages }}
         </span>
         <img 
-          src="@/assets/icons/zoom-out.svg"  
+          src="icons/zoom-out.svg"  
           alt="icon"
           class="btn minus"
           :class="{ disabled: !flipbook.canZoomOut }"
           @click="flipbook.zoomOut"
         />
         <img
-          src="@/assets/icons/right.svg"  
+          src="icons/right.svg"  
           alt="icon"
           class="btn right"
           :class="{ disabled: !flipbook.canFlipRight }"

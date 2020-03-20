@@ -1,21 +1,21 @@
 <template>
 	<div :class="className" @click="handleClick">
 		<span>{{index + 1}}</span>
-		<img v-lazy="inverseSrc" class="inverse-icon"/>
+		<img v-lazy="`icons/inverse.svg`" class="inverse-icon"/>
 	</div>
 </template>
 
 <script>
-import inverseSrc from "@/assets/icons/inverse.svg"
+// import inverseSrc from "@/assets/icons/inverse.svg"
 
 export default {
 	name: "imageController",
 	props: ["index", "position"],
-	data () {
-		return {
-			inverseSrc
-		};
-	},
+	// data () {
+	// 	return {
+	// 		inverseSrc
+	// 	};
+	// },
 	computed: {
 		className: function(){
 			let position = this.position;
