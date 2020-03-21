@@ -1,5 +1,5 @@
 <template>
-	<figure :class="className" :style="styleObject" @click="handleClick">
+	<figure :class="className" :style="[styleObject, cssVars]" @click="handleClick">
 		<img v-lazy="imageData.src" class="gallery-image" :alt="imageData.name"/>
 		<figcaption class="image-title">
 			{{imageData.title}}
@@ -11,8 +11,11 @@
 </template>
 
 <script>
+import { mixin } from '~/utils/mixin'
+
 export default {
 	props: ["index", "data", "position", "center", "inverse"],
+  mixins: [mixin],
 	data: function(){
 		return {
 			className: "gallery-figure",
@@ -63,7 +66,7 @@ export default {
 		height: 400px;
 		padding: 40px;
 		margin: 0;
-		background-color: #FFFFFF;
+		background-color: var(--card-color);
 		box-sizing: border-box;
 		color: #555555;
 		cursor: pointer;
@@ -105,9 +108,9 @@ export default {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			color: #333;
+			color: var(--text-color);
 			box-sizing: border-box;
-			background-color: #FFFFFF;
+			background-color: var(--card-color);
 			-webkit-transform: rotateY(180deg) translateZ(1px);
 			transform: rotateY(180deg) translateZ(1px);
 		}

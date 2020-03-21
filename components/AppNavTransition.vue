@@ -325,6 +325,10 @@ aside p {
   font-size: 35px;
   color: var(--text-color);
   @include group(355px, 0);
+
+  .user-trip {
+    color: #fff;
+  }
 }
 
 .side-icon {

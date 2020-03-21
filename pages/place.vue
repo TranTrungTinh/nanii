@@ -4,7 +4,7 @@
     <a-divider></a-divider>
     <a-row :gutter="16">
       <a-col :xs="24" :lg="16">
-        <a-card class="places" v-for="(place, i) in places" :key="i" bordered hoverable>
+        <a-card class="places" :style="cssVars" v-for="(place, i) in places" :key="i" bordered hoverable>
           <div slot="cover" class="main-img" v-lazy:background-image="place.img[1]"></div>
           <p class="top">{{ users[0].name }}'s Places</p>
           <h1>{{ place.name }}</h1>
@@ -27,7 +27,7 @@
       <a-col :xs="24" :lg="8">
         <div class="others">
           <div v-for="place in reversePlaces" class="location" :key="place.name">
-            <div class="card-link">
+            <div class="card-link" :style="cssVars">
               <article class="blog-card">
                 <img class="post-image" v-lazy="place.img[0]" />
                 <div class="article-details">
@@ -49,8 +49,10 @@
 import { mapGetters } from 'vuex'
 import IconBase from '~/components/IconBase.vue'
 import IconMapPin from '~/components/IconMapPin.vue'
+import { mixin } from '~/utils/mixin'
 
 export default {
+  mixins: [mixin],
   components: {
     IconBase,
     IconMapPin

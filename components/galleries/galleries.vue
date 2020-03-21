@@ -1,6 +1,6 @@
 
 <template>
-	<section class="gallery-container" ref="stage">
+	<section :style="cssVars" class="gallery-container" ref="stage">
 		<div class="gallery-box">
 			<image-figure ref="imageFigure"
 				v-for="(position, index) in positions" :key="index"
@@ -27,8 +27,10 @@
 import { mapGetters } from 'vuex'
 import ImageFigure from "./image-figure.vue"
 import ImageController from "./image-controller.vue"
+import { mixin } from '~/utils/mixin'
 
 export default {
+  mixins: [mixin],
 	data() {
 		return {
 			positions: []
@@ -193,7 +195,7 @@ function allocationPosition(index) {
 		position: relative;
 		width: 100%;
 		height: 100%;
-		background: #EEEEEE;
+		background: var(--bg-gallery);
 	}
 
 	&-box {

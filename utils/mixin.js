@@ -14,6 +14,8 @@ const mixin = {
         '--text-color': this.themeColor.text,
         '--button-color': this.themeColor.button,
         '--shadow-color': this.themeColor.shadow,
+        '--card-color': this.themeColor.card,
+        '--bg-gallery': this.themeColor.galleryBackground,
       }
     }
   },

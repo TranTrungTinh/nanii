@@ -31,6 +31,7 @@
             :visible="menuOpened" 
             :closable="false" 
             @close="onClose"
+            :wrapStyle="cssVars"
           >
             <a-menu class="draw__menu" @click="handleMenuClick">
               <a-menu-item key="1">
@@ -46,26 +47,26 @@
                 </nuxt-link>
               </a-menu-item>
               <a-menu-item key="3">
-                <nuxt-link to="/trips" class="draw__menu--nav">
+                <nuxt-link to="/trips" class="draw__menu--nav" :style="cssVars">
                   <img v-lazy="`/icons/trip.svg`" alt="icon" class="draw__menu--icon" />
                   <span>Trips</span>
                 </nuxt-link>
               </a-menu-item>
-              <a-menu-item key="4" class="draw__menu--nav">
-                <nuxt-link to="/galleries">
+              <a-menu-item key="4">
+                <nuxt-link to="/galleries" class="draw__menu--nav" :style="cssVars">
                   <img v-lazy="`/icons/gallery.svg`" alt="icon" class="draw__menu--icon" />
                   <span>Gallery</span>
                 </nuxt-link>
               </a-menu-item>
-              <a-menu-item key="5" class="draw__menu--nav">
-                <nuxt-link to="/album">
+              <a-menu-item key="5">
+                <nuxt-link to="/album" class="draw__menu--nav" :style="cssVars">
                   <img v-lazy="`/icons/album.svg`" alt="icon" class="draw__menu--icon" />
                   <span>Album</span>
                 </nuxt-link>
               </a-menu-item>
             </a-menu>
             <a-divider></a-divider>
-            <div class="draw__menu--darkmode">
+            <div class="draw__menu--darkmode" :style="cssVars">
               <span>Dark Mode</span>
               <a-switch :defaultChecked="theme === 'dark'" @change="handleToggleDarkMode" />
             </div>
@@ -111,7 +112,10 @@ export default {
   },
   computed: {
     ...mapGetters('app', ['theme']),
-    ...mapGetters(['page','selectedUser'])
+    ...mapGetters(['page','selectedUser']),
+    fillColor () {
+      return this.themeColor.text
+    }
   },
   methods: {
     ...mapActions('app', ['toggleTheme']),

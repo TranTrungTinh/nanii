@@ -1,30 +1,56 @@
-$bg: #eedfcc;
-$text: #777;
-$black: #121212;
-$white: #fff;
-$red: #e04f62;
+$black: var(--text-color);
+$white: var(--card-color);
+$red: var(--button-color);
 $border: #ebebeb;
 $shadow: rgba(0, 0, 0, 0.2);
+
 @mixin transition($args...) {
   transition: $args;
 }
 
 main {
   margin-top: 24px;
-}
 
-h1 {
-  font-size: 45px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
+  h2 {
+    color: $black;
+  }
 }
 
 .places {
   margin-bottom: 20px;
+  background: $white;
+  box-shadow: 0 0.1875rem 1.5rem $shadow;
+  border-color: $shadow;
+  color: $black;
+
+  & h1 {
+    font-size: 45px;
+    padding-bottom: 10px;
+    color: $black;
+    border-bottom: 1px solid $border;
+  }
+
   & .description {
     margin-bottom: 5px;
     margin-top: 10px;
     text-align: justify;
+  }
+
+  .stars {
+    margin: 10px 0;
+  
+    p {
+      margin-top: 10px;
+    }
+  }
+  
+  .main-img {
+    border-radius: 3px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 480px;
   }
 }
 
@@ -75,6 +101,7 @@ h1 {
     margin: 0 0 0.75rem 0;
     padding: 0 0 0.25rem 0;
     border-bottom: 0.125rem solid $border;
+    color: $black;
   }
   
   .post-title {
@@ -92,12 +119,12 @@ h1 {
     margin: 1.125rem 0 0 0;
     padding: 1.125rem 0 0 0;
     border-top: 0.0625rem solid $border;
+    color: $black;
   }
 
   .post-description {
     color: $black;
   }
-
   #container {
     width: 18rem;
     height: 27.25rem;
@@ -126,19 +153,3 @@ h1 {
   }
 }
 
-.stars {
-  margin: 10px 0;
-
-  p {
-    margin-top: 10px;
-  }
-}
-
-.main-img {
-  border-radius: 3px;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 480px;
-}

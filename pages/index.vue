@@ -2,7 +2,7 @@
   <main>
     <a-row :gutter="16">
       <a-col :xs="24" v-for="(place, i) in places" :key="i">
-        <div class="card-link">
+        <div class="card-link" :style="cssVars">
           <article class="blog-card">
             <img class="post-image" v-lazy="place.img[0]" @click="handleClick"/>
             <div class="article-details">
@@ -22,8 +22,10 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import { mixin } from '~/utils/mixin'
 
 export default {
+  mixins: [mixin],
   components: {
     IconBase: () => import('~/components/IconBase.vue'),
     IconMapPin: () => import('~/components/IconMapPin.vue')

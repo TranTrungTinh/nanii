@@ -18,6 +18,24 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.ant-drawer-header {
+  background: var(--bg-color) !important;
+}
+.ant-drawer-title {
+  color: var(--text-color) !important;
+}
+.ant-drawer-content {
+  background-color: var(--bg-color) !important;
+}
+.ant-menu {
+  background: var(--bg-color) !important;
+}
+.ant-switch-checked {
+  background-color: var(--button-color) !important;
+}
+</style>
+
 <style lang="scss" scoped>
 .root {
   background-color: var(--bg-color);

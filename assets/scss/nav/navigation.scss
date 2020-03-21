@@ -146,10 +146,15 @@ nav {
   &--nav {
     display: flex;
     align-items: center;
+    color: var(--button-color);
 
     span {
       font-size: 16px;
       padding-left: 25px;
+    }
+
+    &:hover {
+      color: var(--button-color);
     }
   }
 
@@ -160,6 +165,7 @@ nav {
 
     span {
       font-size: 16px;
+      color: var(--text-color);
     }
   }
 

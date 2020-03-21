@@ -6,16 +6,9 @@
 </template>
 
 <script>
-// import inverseSrc from "@/assets/icons/inverse.svg"
-
 export default {
 	name: "imageController",
 	props: ["index", "position"],
-	// data () {
-	// 	return {
-	// 		inverseSrc
-	// 	};
-	// },
 	computed: {
 		className: function(){
 			let position = this.position;

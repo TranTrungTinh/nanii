@@ -1,27 +1,37 @@
 <template>
   <div>
-    <a-divider orientation="left">24/01/2019</a-divider>
+    <a-divider orientation="left">
+      <span class="time" :style="cssVars">24/01/2019</span>
+    </a-divider>
     
     <sixth-gallery :galleries="first" />
 
-    <a-divider orientation="left">25/01/2019</a-divider>
+    <a-divider orientation="left">
+      <span class="time" :style="cssVars">25/01/2019</span>
+    </a-divider>
 
     <second-gallery :galleries="second" />
 
-    <a-divider orientation="left">13/07/2019</a-divider>
+    <a-divider orientation="left">
+      <span class="time" :style="cssVars">13/07/2019</span>
+    </a-divider>
 
     <third-gallery :galleries="third" />
     
-    <a-divider orientation="left">14/05/2019</a-divider>
+    <a-divider orientation="left">
+      <span class="time" :style="cssVars">14/05/2019</span>
+    </a-divider>
 
     <fourth-gallery :galleries="fourth" />
   </div>
 </template>
 <script>
+import { mixin } from '~/utils/mixin'
 import { prepare } from '@/utils/prepareData.js'
 const galleries = prepare('trip/dalat', 32)
 
 export default {
+  mixins: [mixin],
   components: {
     FirstGallery: () => import('~/components/gallery/first-gallery.vue'),
     SecondGallery: () => import('~/components/gallery/second-gallery.vue'),
@@ -46,3 +56,8 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.time {
+  color: var(--text-color);
+}
+</style>

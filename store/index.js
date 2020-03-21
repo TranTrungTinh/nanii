@@ -16,7 +16,7 @@ const initialState = () => ({
     {
       id: "jhfjbngjsaywquitr_ieyurgdaf",
       name: 'Ngọc Anh',
-      img: '/profile/2.jpg',
+      img: '/profile/4.jpg',
       bio: 'Thanh xuân là những chuyến đi.',      
       following: 542,
       followers: 5643,
@@ -53,16 +53,17 @@ const initialState = () => ({
       stars: 5,
       tags: ['dalat', 'cool', 'fresh'],
       img: ['/home/2.jpg', '/place/1.jpg'],
-      status: `Nơi yên bình, nơi cất giữ những yêu thương không đâu khác chính là Nơi Đây. Tôi yêu cái lạnh buốt da, yêu sự tĩnh lặng khi về thăm Đà Lạt vào những ngày thứ trong tuần. Nó nhẹ nhàng không ồn ào không chút vội vã. Yêu những cung đường lúc thì ngoằn nghoèo khi thì thẳng tấp không cần đưa tôi đến nơi đâu cả. Cơn mưa rào bất chợt chỉ lướt qua rồi đi mất cũng làm tôi yêu nơi này hơn. Những buổi sáng quấn mình trong chăn ấm áp, những buổi chiều lang thang một mình ngắm nhìn mọi thứ...bình yên đến lạ thường! Yêu luôn cả con người, những đôi mắt long lanh làn da rám nắng của đám trẻ con người bản địa. Tôi yêu nơi này!`,
+      status: `Nơi nào không yêu, lại yêu Đà Lạt. Rồi cũng có những chuyến đi sau nữa của lần đầu tiên mà không phải nơi nào cũng làm ta vấn vương như thế. Rồi lại có thêm những ngời bạn mới cùng mình thay vào những người cũ đã từng quen. Nhưng sao mọi thứ vẫn rất thân thuộc, mãi không thế thay đổi cảm xúc khi đặt chân đến những nơi đã từng là yêu thương.`,
       description:
-        `Để yêu thêm Đà Lạt bạn hãy thử đến những vùng đất thiên nhiên ít người thay vì chen chúc nhau vào nơi đông đúc. Trải nghiệm tuyệt vời hơn khi bạn đi xe máy lên tận nơi và vi vu qua những con đường đèo xanh mát.<br> 
-        - Tùng Hạ farm: Nơi chứa đựng nhiều tình yêu thiên nhiên nhất tôi từng đặt chân đến. Nơi có loài hoa tôi yêu hoa oải hương, nơi có một căn nhà kính nhỏ với đầy sách và những vật dụng dễ thương, nơi có những con người hiền hòa chất phát luôn gắn liền với công việc chăm vườn không cần phải lo nghĩ gì. Một nơi thật sự xinh đẹp!<br>
-        - Trại mát: Tôi ghé qua nơi này vào lúc 18h chiều chỉ là để ngắm đèn của từng nhà kính lần lượt được bật lên.<br>
-        - Đồi chè Cầu Đất: Ở nơi đây chẳng gì thú vị hơn là được nhìn thấy các cô các chị cặm cụi hái chè trên cánh đồng xanh bất tận.<br>
-        - Đỉnh Langbiang: Để ngắm được sự hùng vĩ của vùng núi non này nơi đây là lựa chọn tốt nhât.<br>
-        - Ma rừng lữ quán: Một con đường xấu một lối đi nhỏ cũng không ngăn cản được tôi đến với vùng đất xinh đẹp như thế. Nhà màu tím, hoa màu tím cả cảnh vật cũng mang một màu tím đượm buồn.<br>
-        - Hồ suối Vàng: Nơi này có gì? Có một cây thông mọi người gọi là cây thông cô đơn.<br>
-        - Hồ Tuyền Lâm: Mọi người thường dừng chân ở hồ để ngắm cảnh còn tôi lại chạy hết một vòng hồ để cảm nhận cái đẹp.`
+        `Chạy dọc qua các cung đường đèo và hít hà mùi thông ở hai bên. Nắng rọi qua từng kẽ lá, hoà với màn sương chưa kịp tan, bật thêm một bản nhạc vi vu đưa nhau đến vài nơi xưa cũ:<br>
+        - Tùng Hạ farm: Hoa oải hương đã mang tôi đến nơi đây, nơi có một căn nhà kính nhỏ với đầy sách và những vật dụng dễ thương, nơi có những con người hiền hòa chất phát luôn gắn liền với công việc chăm vườn không cần phải lo nghĩ gì. <br>
+        - Trại mát: Cảm giác thế nào khi nhiệt độ chỉ tầm 15 độ hơn, được ngồi nhâm nhi tách cafe nóng ngắm những ánh đèn từ từ sáng lên. <br>
+        - Đồi chè Cầu Đất: Những cách đồng chè xanh bất tận nối dài xa tít.<br>
+        - Đỉnh Langbiang: Nơi mà bạn có thể ngắm nhìn toàn cảnh núi đồi hùng vĩ.<br>
+        - Ma rừng lữ quán: Một nơi chứa đựng tất cả sự bình dị với những căn nhà nhỏ và khu vườn đầy hoa màu tím.<br>
+        - Hồ suối Vàng: Cũng là vì lời hứa quyết đi đến cùng với nhau mà tôi và chúng bạn đã đến được với cây thông cô đơn.<br>
+        - Hồ Tuyền Lâm: Đã lần nào bạn thử chạy 1 vòng xem nó rộng lớn thế nào chưa?<br>
+        Và còn nhiều điều yêu thương khác nữa...`
     },
     {
       name: 'Nha Trang',
