@@ -1,9 +1,9 @@
 <template>
-  <div class="stats">
+  <div :style="cssVars" class="stats">
     <div class="bio">
       <p>{{ selectedUser.bio }}</p>
     </div>
-    <div>
+    <div >
       <span class="desc">Followers</span><br>
       <span class="lg">{{ selectedUser.followers }}</span>
     </div>
@@ -15,12 +15,15 @@
 </template>
 
 <script>
+import { mixin } from '~/utils/mixin'
+
 export default {
   props: {
     selectedUser: {
       type: Object
     }
-  }
+  },
+  mixins: [mixin]
 }
 </script>
 
@@ -34,6 +37,8 @@ export default {
   width: 60%;
   justify-content: space-between;
   line-height: 1.2;
+  color: var(--text-color);
+
 }
 
 .lg {

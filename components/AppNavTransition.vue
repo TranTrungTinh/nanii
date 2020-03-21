@@ -10,27 +10,15 @@
       <img v-lazy="user.img" alt="profile" />
     </div>
 
-    <button @click="toggleFollow" :class="[following ? followclass : '', follow]" key="follow">
+    <button :style="cssVars" @click="toggleFollow" :class="[following ? followclass : '', follow]" key="follow">
       <span v-if="following">&#10004; Following</span>
       <span v-else>Follow</span>
     </button>
 
-    <h2 key="profile-name" class="profile-name">
+    <h2 key="profile-name" :style="cssVars"  class="profile-name">
       <span v-if="page === 'trips'" class="user-trip">{{ selectedUser.trips[0] }}</span>
       <span v-else>{{ selectedUser.name }}</span>
     </h2>
-
-    <!-- <div @click="addPlace" class="side-icon" key="sideicon">
-      <icon-base v-if="page === 'index'" icon-name="mail" icon-color="white" width="22" height="22">
-        <icon-mail />
-      </icon-base>
-
-      <icon-base v-else icon-name="plus" class="plus" width="18" height="18">
-        <icon-plus />
-      </icon-base>
-    </div>
-
-    <div key="saveinfo" class="saveinfo">Saved!</div> -->
 
     <aside key="aside">
       <p class="map-pin">
@@ -57,8 +45,10 @@ import IconMail from './IconMail.vue'
 import IconPlus from './IconPlus.vue'
 import IconMapPin from './IconMapPin.vue'
 import IconCalendar from './IconCalendar.vue'
+import { mixin } from '~/utils/mixin'
 
 export default {
+  mixins: [mixin],
   components: {
     IconBase,
     IconMail,
@@ -309,6 +299,7 @@ aside p {
   font-weight: bold;
   width: 130px;
   transition: 1s all ease;
+  box-shadow: 0 0px 4px -0 var(--shadow-color);
   @include group(320px, 220px);
   &:focus {
     outline: 1px dotted rgb(5, 134, 106);
@@ -332,6 +323,7 @@ aside p {
 
 .profile-name {
   font-size: 35px;
+  color: var(--text-color);
   @include group(355px, 0);
 }
 
@@ -357,7 +349,6 @@ aside p {
   }
   .profile-name {
     transform: translate3d(140px, -125px, 0) scale(0.75);
-    color: white;
   }
   .side-icon {
     transform: translate3d(0, -40px, 0);
@@ -398,7 +389,6 @@ aside p {
   }
   .profile-name {
     transform: translate3d(0px, -125px, 0);
-    color: white;
   }
   .side-icon {
     transform: translate3d(0, -40px, 0);

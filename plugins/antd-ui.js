@@ -10,7 +10,8 @@ import {
   Menu,
   Rate,
   Row,
-  Tag
+  Tag,
+  Switch
 } from 'static/vendor/ant-design-vue'
 
 // css manual import
@@ -25,7 +26,8 @@ import {
   'menu',
   'rate',
   'row',
-  'tag'
+  'tag',
+  'switch'
 ].forEach(libName => import(`static/vendor/ant-design-vue/lib/${libName}/style/css`))
 
 export default () => {
@@ -40,4 +42,5 @@ export default () => {
   Vue.use(Rate)
   Vue.use(Row)
   Vue.use(Tag)
+  Vue.use(Switch)
 }

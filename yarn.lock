@@ -8242,6 +8242,11 @@ vue-loader@^15.8.3:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-ls@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/vue-ls/-/vue-ls-3.2.1.tgz#25d1c75b3a51c17018129de607b44bb120a3385a"
+  integrity sha512-JoZDpSu0qV5AM50vspEzOut2lcm8R0tr5WG99jMHh14qFXkUes3ZdmDMG/p8iSQVQpg0pd/svGwM9Nd7OI2oaw==
+
 vue-meta@^2.3.1:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/vue-meta/-/vue-meta-2.3.3.tgz#2a097f62817204b0da78be4d62aee0cb566eaee0"
@@ -8277,11 +8282,6 @@ vue-server-renderer@^2.6.11:
     resolve "^1.2.0"
     serialize-javascript "^2.1.2"
     source-map "0.5.6"
-
-vue-star@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/vue-star/-/vue-star-0.0.4.tgz#8471e22eac46cb96b5e49d2cdcd0951b3472a8ab"
-  integrity sha1-hHHiLqxGy5a15J0s3NCVGzRyqKs=
 
 vue-style-loader@^4.1.0:
   version "4.1.2"

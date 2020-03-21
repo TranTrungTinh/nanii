@@ -24,28 +24,28 @@ const initialState = () => ({
       trips: ['Coco Beach'],
       active: true
     },
-    {
-      id: "mkfjsahbrwtqeuwqy231_84732hjhtad",
-      name: 'Ngọc Anh',
-      img: '/profile/3.jpg',
-      bio: 'Thanh xuân là những chuyến đi.',      
-      following: 347,
-      followers: 3476,
-      days: 3,
-      trips: ['Đà Lạt'],
-      active: false
-    },
-    {
-      id: "brfsadaewqqeuwqy231_84732hjhtad",
-      name: 'Ngọc Anh',
-      img: '/profile/4.jpg',
-      bio: 'Thanh xuân là những chuyến đi.',     
-      following: 654,
-      followers: 8755,
-      days: 4,
-      trips: ['Nha Trang'],
-      active: true
-    }
+    // {
+    //   id: "mkfjsahbrwtqeuwqy231_84732hjhtad",
+    //   name: 'Ngọc Anh',
+    //   img: '/profile/3.jpg',
+    //   bio: 'Thanh xuân là những chuyến đi.',      
+    //   following: 347,
+    //   followers: 3476,
+    //   days: 3,
+    //   trips: ['Đà Lạt'],
+    //   active: false
+    // },
+    // {
+    //   id: "brfsadaewqqeuwqy231_84732hjhtad",
+    //   name: 'Ngọc Anh',
+    //   img: '/profile/4.jpg',
+    //   bio: 'Thanh xuân là những chuyến đi.',     
+    //   following: 654,
+    //   followers: 8755,
+    //   days: 4,
+    //   trips: ['Nha Trang'],
+    //   active: true
+    // }
   ],
   places: [
     {

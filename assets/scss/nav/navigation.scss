@@ -146,15 +146,25 @@ nav {
   &--nav {
     display: flex;
     align-items: center;
+
+    span {
+      font-size: 16px;
+      padding-left: 25px;
+    }
+  }
+
+  &--darkmode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      font-size: 16px;
+    }
   }
 
   &--icon {
     width: 22px;
     height: 22px;
-  }
-
-  span {
-    font-size: 16px;
-    padding-left: 25px;
   }
 }

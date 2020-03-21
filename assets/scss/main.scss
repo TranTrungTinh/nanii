@@ -11,20 +11,19 @@ html, body {
   height: 3px !important;
 }
 
-// override ant ui
-.ant-layout {
-  &,
-  &-header,
-  &-footer {
-    background: #fff !important;
-  }
+// // override ant ui
+// .ant-layout {
+//   &,
+//   &-header,
+//   &-footer {
+//     background: #fff !important;
+//   }
 
-}
+// }
 
 
 body {
-  background: white;
-  color: #333;
+  // background: transparent;
   font-family: 'Source Sans Pro';
   font-size: 16px;
   word-spacing: 1px;
