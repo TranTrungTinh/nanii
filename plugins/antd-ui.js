@@ -12,7 +12,7 @@ import {
   Row,
   Tag,
   Switch
-} from 'static/vendor/ant-design-vue'
+} from 'static/vendor/ant-design-vue/es'
 
 // css manual import
 [
@@ -28,7 +28,7 @@ import {
   'row',
   'tag',
   'switch'
-].forEach(libName => import(`static/vendor/ant-design-vue/lib/${libName}/style/css`))
+].forEach(libName => import(`static/vendor/ant-design-vue/es/${libName}/style/css`))
 
 export default () => {
   Vue.use(BackTop)

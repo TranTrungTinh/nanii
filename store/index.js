@@ -16,7 +16,7 @@ const initialState = () => ({
     {
       id: "jhfjbngjsaywquitr_ieyurgdaf",
       name: 'Ngọc Anh',
-      img: '/profile/4.jpg',
+      img: '/profile/5.jpg',
       bio: 'Thanh xuân là những chuyến đi.',      
       following: 542,
       followers: 5643,
@@ -53,7 +53,7 @@ const initialState = () => ({
       stars: 5,
       tags: ['dalat', 'cool', 'fresh'],
       img: ['/home/2.jpg', '/place/1.jpg'],
-      status: `Nơi nào không yêu, lại yêu Đà Lạt. Rồi cũng có những chuyến đi sau nữa của lần đầu tiên mà không phải nơi nào cũng làm ta vấn vương như thế. Rồi lại có thêm những ngời bạn mới cùng mình thay vào những người cũ đã từng quen. Nhưng sao mọi thứ vẫn rất thân thuộc, mãi không thế thay đổi cảm xúc khi đặt chân đến những nơi đã từng là yêu thương.`,
+      status: `Nơi nào không yêu, lại yêu Đà Lạt. Rồi cũng có những chuyến đi sau nữa của lần đầu tiên mà không phải nơi nào cũng làm ta vấn vương như thế. Rồi lại có thêm những ngời bạn mới cùng mình thay vào những người cũ đã từng quen. Nhưng sao mọi thứ vẫn rất thân thuộc, mãi không thể thay đổi cảm xúc khi đặt chân đến những nơi đã từng là yêu thương.`,
       description:
         `Chạy dọc qua các cung đường đèo và hít hà mùi thông ở hai bên. Nắng rọi qua từng kẽ lá, hoà với màn sương chưa kịp tan, bật thêm một bản nhạc vi vu đưa nhau đến vài nơi xưa cũ:<br>
         - Tùng Hạ farm: Hoa oải hương đã mang tôi đến nơi đây, nơi có một căn nhà kính nhỏ với đầy sách và những vật dụng dễ thương, nơi có những con người hiền hòa chất phát luôn gắn liền với công việc chăm vườn không cần phải lo nghĩ gì. <br>

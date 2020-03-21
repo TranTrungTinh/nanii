@@ -38,7 +38,7 @@ export default {
   loadingIndicator: {
     name: 'cube-grid',
     color: '#3B3B98',
-    background: '#fff'
+    background: '#1c1e21'
   },
   /* Global CSS */
   css: [
@@ -49,7 +49,7 @@ export default {
   /*  Plugins to load before mounting the App */
   plugins: [
     { src: '@/plugins/antd-ui.js' },
-    { src: '@/plugins/use.js', ssr: false }
+    { src: '@/plugins/use.js', mode: 'client' }
   ],
 
   /* Nuxt.js modules */
@@ -61,6 +61,22 @@ export default {
   /* Build configuration */
   build: {
     // analyze: true,
-    extend(config, ctx) {}
+    extend(config, ctx) {},
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+        maxInitialRequests: Infinity,
+        minSize: 0,
+        cacheGroups: {
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name(module) {
+              const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
+              return `npm.${packageName.replace('@', '')}`;
+            }
+          }
+        }
+      }
+    },
   }
 }
