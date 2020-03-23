@@ -38,6 +38,6 @@ export default {
 
 <style lang="scss" scoped>
 .root {
-  background-color: var(--bg-color);
+  background: var(--bg-color);
 }
 </style>
