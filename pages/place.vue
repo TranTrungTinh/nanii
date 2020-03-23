@@ -29,7 +29,7 @@
           <div v-for="place in reversePlaces" class="location" :key="place.name">
             <div class="card-link" :style="cssVars">
               <article class="blog-card">
-                <img class="post-image" v-lazy="place.img[0]" />
+                <img class="post-image" alt="img-cover" v-lazy="place.img[0]" />
                 <div class="article-details">
                   <h4 class="post-category">TRAVEL</h4>
                   <h3 class="post-title">{{ place.name }}</h3>

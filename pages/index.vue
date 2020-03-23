@@ -4,7 +4,7 @@
       <a-col :xs="24" v-for="(place, i) in places" :key="i">
         <div class="card-link" :style="cssVars">
           <article class="blog-card">
-            <img class="post-image" v-lazy="place.img[0]" @click="handleClick"/>
+            <img class="post-image" v-lazy="place.img[0]" alt="img-cover" @click="handleClick"/>
             <div class="article-details">
               <nuxt-link to="/place">
                 <h4 class="post-category">TRAVEL</h4>
