@@ -37,7 +37,6 @@ export default {
       { property: 'og:type', content: 'website' }
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap' },
       { rel: "shortcut icon", href:"/app/favicon.ico", type: "image/x-icon" },
       { rel: "apple-touch-icon", href:"/app/apple-touch-icon.png" },
       { rel: "apple-touch-icon", sizes:"57x57"  , href: "/app/apple-touch-icon-57x57.png"  },
@@ -48,6 +47,7 @@ export default {
       { rel: "apple-touch-icon", sizes:"144x144", href: "/app/apple-touch-icon-144x144.png" },
       { rel: "apple-touch-icon", sizes:"152x152", href: "/app/apple-touch-icon-152x152.png" },
       { rel: "apple-touch-icon", sizes:"180x180", href: "/app/apple-touch-icon-180x180.png" },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap' }
     ]
   },
 
@@ -61,6 +61,7 @@ export default {
   /* Global CSS */
   css: [
     { src: 'nprogress/nprogress.css' },
+    { src: '@/assets/lib/ihover.min.css' },
     { src: '@/assets/scss/main.scss', lang: 'scss' }
   ],
 

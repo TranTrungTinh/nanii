@@ -1,9 +1,9 @@
 @mixin respond($breakpoint) {
   @if $breakpoint == xs  {
-      @media only screen and (max-width: 375px) { @content };    //iphone 6,7,8,X,Xs
+      @media only screen and (max-width: 480px) { @content };    //iphone 6,7,8,X,Xs
   }
   @if $breakpoint == sm {
-      @media only screen and (max-width: 414px) { @content };     //iphone 6,7,8 plus, Xs max
+      @media only screen and (max-width: 576px) { @content };     //iphone 6,7,8 plus, Xs max
   }
   @if $breakpoint == md {
       @media only screen and (max-width: 768px) { @content };    //ipad port

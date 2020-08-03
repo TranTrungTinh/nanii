@@ -19,7 +19,7 @@ export default {
   },
   computed: {
     comClass() {
-      return `gallery__item ${this.classes}`
+      return `gallery__item ${this.classes} ih-item square effect3 bottom_to_top`
     },
     bindClass() {
       return this.isActive ? 'heart active' : 'heart'
