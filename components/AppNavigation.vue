@@ -67,8 +67,15 @@
             </a-menu>
             <a-divider></a-divider>
             <div class="draw__menu--darkmode" :style="cssVars">
-              <span>Dark Mode</span>
-              <a-switch :defaultChecked="theme === 'dark'" @change="handleToggleDarkMode" />
+              <span>Theme:</span>
+              <a-radio-group :default-value="theme" button-style="solid" @change="handleToggleDarkMode">
+                <a-radio-button value="dark">
+                  Dark
+                </a-radio-button>
+                <a-radio-button value="light">
+                  Light
+                </a-radio-button>
+              </a-radio-group>
             </div>
           </a-drawer>
         </div>
@@ -115,6 +122,12 @@ export default {
     ...mapGetters(['page','selectedUser']),
     fillColor () {
       return this.themeColor.text
+    },
+    dark () {
+      return IconDark
+    },
+    light () {
+      return IconLight
     }
   },
   methods: {
@@ -128,9 +141,9 @@ export default {
     handleMenuClick() {
       this.onClose()
     },
-    handleToggleDarkMode (checked) {
-      const theme = (checked && 'dark') || 'light'
-      this.toggleTheme(theme)
+    handleToggleDarkMode ({ target }) {
+      // const theme = (checked && 'dark') || 'light'
+      this.toggleTheme(target.value)
     }
   }
 }

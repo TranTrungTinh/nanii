@@ -11,7 +11,7 @@ import {
   Rate,
   Row,
   Tag,
-  Switch
+  Radio
 } from 'static/vendor/ant-design-vue/es'
 
 // css manual import
@@ -27,7 +27,7 @@ import {
   'rate',
   'row',
   'tag',
-  'switch'
+  'radio'
 ].forEach(libName => import(`static/vendor/ant-design-vue/es/${libName}/style/css`))
 
 export default () => {
@@ -42,5 +42,5 @@ export default () => {
   Vue.use(Rate)
   Vue.use(Row)
   Vue.use(Tag)
-  Vue.use(Switch)
+  Vue.use(Radio)
 }

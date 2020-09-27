@@ -1,5 +1,6 @@
 export default {
-  mode: 'spa',
+  ssr: false,
+  target: 'static',
   router: {
     middleware: 'pages'
   },
@@ -80,22 +81,25 @@ export default {
   /* Build configuration */
   build: {
     // analyze: true,
-    extend(config, ctx) {},
-    optimization: {
-      splitChunks: {
-        chunks: 'all',
-        maxInitialRequests: Infinity,
-        minSize: 0,
-        cacheGroups: {
-          vendor: {
-            test: /[\\/]node_modules[\\/]/,
-            name(module) {
-              const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
-              return `npm.${packageName.replace('@', '')}`;
+    extend(config, {isDev, isClient}) {
+      config.module.rules.forEach(rule => {
+        if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
+          // add a second loader when loading images
+          rule.use.push({
+            loader: 'image-webpack-loader',
+            options: {
+              svgo: {
+                plugins: [
+                  // use these settings for internet explorer for proper scalable SVGs
+                  // https://css-tricks.com/scale-svg/
+                  { removeViewBox: false },
+                  { removeDimensions: true }
+                ]
+              }
             }
-          }
+          })
         }
-      }
-    },
+      })
+    }
   }
 }

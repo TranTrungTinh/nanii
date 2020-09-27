@@ -178,3 +178,8 @@ main {
     }
   }
 }
+
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  background: #3B3B98 !important;
+  border-color: #3B3B98 !important;
+}
